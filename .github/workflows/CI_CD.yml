@@ -44,3 +44,8 @@ jobs:
             --site ${{ secrets.NETLIFY_SITE_BUNDLE_VIS_ID }} \
             --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
             --prod
+
+      - name: Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.13.x
+          lhci autorun
