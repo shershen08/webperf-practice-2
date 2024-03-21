@@ -35,3 +35,12 @@ jobs:
             --site ${{ secrets.NETLIFY_SITE_ID }} \
             --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
             --prod
+
+      - name: Deploy bundle visualizer
+        id: netlify_deploy_bundle_vis
+        run: |
+          netlify deploy \
+            --dir extra/visualizer \
+            --site ${{ secrets.NETLIFY_SITE_BUNDLE_VIS_ID }} \
+            --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
+            --prod
