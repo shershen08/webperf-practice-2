@@ -2,6 +2,7 @@ import {defineConfig} from 'vite';
 import {resolve} from 'path';
 import {ViteImageOptimizer} from "vite-plugin-image-optimizer";
 import {visualizer} from "rollup-plugin-visualizer";
+import VitePluginWebpCompress from 'vite-plugin-webp-compress';
 
 export default defineConfig({
     base: './',
@@ -13,7 +14,8 @@ export default defineConfig({
         }),
         visualizer({
             filename: 'extra/visualizer/index.html',
-        })
+        }),
+        VitePluginWebpCompress(),
     ],
     build: {
         minify: 'esbuild',

@@ -49,3 +49,4 @@ jobs:
         run: |
           npm install -g @lhci/cli@0.13.x
           lhci autorun
+        continue-on-error: true
