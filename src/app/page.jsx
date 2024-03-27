@@ -414,7 +414,7 @@ export default function Page() {
 
             <div className="col-lg-6 col-md-6 col-12">
               <div className="news-thumb mb-4">
-                <Link href="news-detail.html">
+                <Link href="/news-detail">
                   <Image src={pablo} className="img-fluid news-image" alt="" />
                 </Link>
 
@@ -422,7 +422,7 @@ export default function Page() {
                   <span className="category-tag bg-danger">Featured</span>
 
                   <h5 className="news-title mt-2">
-                    <Link href="news-detail.html" className="news-title-link">
+                    <Link href="/news-detail" className="news-title-link">
                       Healthy Lifestyle and happy living tips
                     </Link>
                   </h5>
@@ -432,7 +432,7 @@ export default function Page() {
 
             <div className="col-lg-6 col-md-6 col-12">
               <div className="news-thumb mb-4">
-                <Link href="news-detail.html">
+                <Link href="/news-detail">
                   <Image src={stefan} className="img-fluid news-image" alt="" />
                 </Link>
 
@@ -440,7 +440,7 @@ export default function Page() {
                   <span className="category-tag bg-danger">Featured</span>
 
                   <h5 className="news-title mt-2">
-                    <Link href="news-detail.html" className="news-title-link">
+                    <Link href="/news-detail" className="news-title-link">
                       How to make a healthy meal
                     </Link>
                   </h5>
@@ -450,7 +450,7 @@ export default function Page() {
 
             <div className="col-lg-4 col-md-4 col-12">
               <div className="news-thumb mb-lg-0 mb-lg-4 mb-0">
-                <Link href="news-detail.html">
+                <Link href="/news-detail">
                   <Image
                     src={guilles}
                     className="img-fluid news-image"
@@ -464,7 +464,7 @@ export default function Page() {
                   <strong>8 April 2022</strong>
 
                   <h5 className="news-title mt-2">
-                    <Link href="news-detail.html" className="news-title-link">
+                    <Link href="/news-detail" className="news-title-link">
                       Is Coconut good for you?
                     </Link>
                   </h5>
@@ -474,7 +474,7 @@ export default function Page() {
 
             <div className="col-lg-4 col-md-4 col-12">
               <div className="news-thumb mb-lg-0 mb-lg-4 mb-2">
-                <Link href="news-detail.html">
+                <Link href="/news-detail">
                   <Image
                     src={caroline}
                     className="img-fluid news-image"
@@ -486,7 +486,7 @@ export default function Page() {
                   <span className="category-tag">News</span>
 
                   <h5 className="news-title mt-2">
-                    <Link href="news-detail.html" className="news-title-link">
+                    <Link href="/news-detail" className="news-title-link">
                       Salmon Steak Noodle
                     </Link>
                   </h5>
@@ -496,7 +496,7 @@ export default function Page() {
 
             <div className="col-lg-4 col-md-6 col-12">
               <div className="news-thumb mb-4">
-                <Link href="news-detail.html">
+                <Link href="/news-detail">
                   <Image
                     src={lousiHansel}
                     className="img-fluid news-image"
@@ -510,7 +510,7 @@ export default function Page() {
                   <strong>30 April 2022</strong>
 
                   <h5 className="news-title mt-2">
-                    <Link href="news-detail.html" className="news-title-link">
+                    <Link href="/news-detail" className="news-title-link">
                       Making a healthy salad
                     </Link>
                   </h5>
