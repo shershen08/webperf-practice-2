@@ -39,6 +39,25 @@ export default function App({ Component, pageProps }) {
     dialog.current.close();
   };
 
+  const submitForm = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const formObject = Object.fromEntries(formData.entries());
+
+    const response = await fetch('/api/form', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formObject),
+    });
+
+    const data = await response.json();
+
+    alert(JSON.stringify(data));
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-white shadow-lg">
@@ -148,7 +167,7 @@ export default function App({ Component, pageProps }) {
             <div className="modal-body d-flex flex-column justify-content-center">
               <div className="booking">
 
-                <form className="booking-form row" role="form" action="#" method="post">
+                <form className="booking-form row" role="form" onSubmit={submitForm}>
                   <div className="col-lg-6 col-12">
                     <label htmlFor="name" className="form-label">Full Name</label>
 
