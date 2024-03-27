@@ -1,6 +1,6 @@
-import "../styles/globals.css";
 import "../styles/bootstrap.min.css";
 import "../styles/bootstrap-icons.css";
+import "../styles/globals.css";
 import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 
@@ -30,6 +30,8 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
       </body>
     </html>
   );
