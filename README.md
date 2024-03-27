@@ -5,3 +5,4 @@
 - Use metadata next api for pages
 - Add `Navbar` component
 - Add `Footer` component
+- Migrate mobile navbar logic to react hooks

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Video from "../components/Video.jsx";
-import Link from "next/link.js";
+import Link from "next/link";
 
 // Images
 import brettJordan from "../images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg";

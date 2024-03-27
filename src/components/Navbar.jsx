@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link.js";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { useRef } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const navbarCollapseRef = useRef();
 
   const links = [
     {
@@ -59,13 +61,20 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div
+          className="collapse navbar-collapse"
+          id="navbarNav"
+          ref={navbarCollapseRef}
+        >
           <ul className="navbar-nav mx-auto">
             {links.map((l) => (
               <li className="nav-item" key={l.name}>
                 <Link
                   className={`nav-link ${l.url === pathname ? "active" : ""}`}
                   href={l.url}
+                  onClick={() => {
+                    navbarCollapseRef.current.collapse("hide");
+                  }}
                 >
                   {l.name}
                 </Link>
