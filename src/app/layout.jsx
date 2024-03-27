@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import "../styles/bootstrap.min.css";
 import "../styles/bootstrap-icons.css";
 import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
 
 export const metadata = {
   title: "My Page Title",
@@ -27,7 +28,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
